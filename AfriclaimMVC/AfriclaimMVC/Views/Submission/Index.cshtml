@@ -1,0 +1,120 @@
+﻿@model List<AfriclaimMVC.Models.ClaimViewModel>
+
+@{
+    ViewData["Title"] = "Submissions";
+}
+
+<h1 class="page-title">Index</h1>
+
+<!-- Filter bar -->
+<div class="filter-container" style="margin-bottom: 20px;">
+    <span class="filter-label" style="background-color: #ff9933; padding: 5px 10px; border-radius: 5px; color: white;">Filter by:</span>
+    <select id="filter" class="form-control" style="width: 200px; display: inline-block; margin-left: 10px;">
+        <option value="Name">Name</option>
+        <!-- Add more filter options here if needed -->
+    </select>
+</div>
+
+<!-- Table structure with headings -->
+<table class="submission-table">
+    <thead>
+        <tr>
+            <th>Submission Date</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Amount/Hours</th>
+            <th>Module</th>
+            <th>Total Salary</th>
+            <th>Document</th>
+            <th>Status</th> <!-- Status will now include the buttons -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model)
+        {
+            <!-- Start a new row for each claim -->
+            <tr>
+                <td>@claim.SubmissionDate.ToString("d")</td> <!-- Display the submission date  -->
+                <td>@claim.Name</td> <!-- Display the persons name -->
+                <td>@claim.Surname</td> <!-- Display the persons surname -->
+                <td>@claim.Amount</td> <!-- Display the amount/hours claimed -->
+                <td>@claim.Module</td> <!-- Display the module related to the claim -->
+                <td>@claim.TotalSalary.ToString("C")</td> <!-- Display the total salary in currency format -->
+                <td>@(string.IsNullOrEmpty(claim.DocumentName) ? "No document" : claim.DocumentName)</td>
+                <td>
+                    @if (claim.Status == "Pending")
+                    {
+                        <!-- Show Approve and Reject buttons when the claim is pending -->
+                        <form asp-action="UpdateClaimStatus" method="post" style="display:inline-block">
+                            <input type="hidden" name="id" value="@claim.Id" />
+                            <input type="hidden" name="status" value="Approved" />
+                            <button type="submit" class="btn btn-success" style="border-radius: 20px; padding: 5px 10px;">Approve</button>
+                        </form>
+                        <form asp-action="UpdateClaimStatus" method="post" style="display:inline-block">
+                            <input type="hidden" name="id" value="@claim.Id" />
+                            <input type="hidden" name="status" value="Rejected" />
+                            <button type="submit" class="btn btn-danger" style="border-radius: 20px; padding: 5px 10px;">Reject</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <!-- Display the current status when it's not pending -->
+                        <span>@claim.Status</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Styles used for the Submission page -->
+<style>
+    .page-title {
+        font-size: 36px;
+        font-weight: bold;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+    .submission-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 40px;
+    }
+
+        .submission-table th {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #e0e0e0;
+            background-color: #e0f7f4; /* Light teal color */
+            font-size: 14px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .submission-table td {
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+        }
+
+    .btn {
+        margin-right: 5px; /* Ensure buttons have space between them */
+    }
+
+    /* Add style for the filter */
+    .filter-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .filter-label {
+        font-weight: bold;
+    }
+
+    .form-control {
+        padding: 5px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+</style>
