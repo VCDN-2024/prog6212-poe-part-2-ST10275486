@@ -1,49 +1,94 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - AfriclaimMVCST10275486</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/AfriclaimMVCST10275486.styles.css" asp-append-version="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Africlaim</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <!-- Font Awesome for the profile icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <style>
+        .navbar-custom {
+            background-color: #00a386;
+            color: white;
+        }
+
+            .navbar-custom a {
+                color: white;
+                font-weight: bold;
+            }
+
+            .navbar-custom .navbar-brand img {
+                height: 40px;
+            }
+
+        .profile-icon {
+            font-size: 24px;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AfriclaimMVCST10275486</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="/">
+            <img src="/path-to-logo.png" alt="Africlaim Logo" />
+        </a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link @((ViewContext.RouteData.Values["action"].ToString() == "Index" && ViewContext.RouteData.Values["controller"].ToString() == "Home") ? "active" : "")" href="/">Home</a>
+            </li>
+
+            @* Show Claim and Invoice links for Lecturer *@
+            @if (HttpContextAccessor.HttpContext.Session.GetString("UserRole") == "Lecturer")
+            {
+                <li class="nav-item">
+                    <a class="nav-link @((ViewContext.RouteData.Values["controller"].ToString() == "Claim") ? "active" : "")" href="/Claim">Claim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @((ViewContext.RouteData.Values["controller"].ToString() == "Invoice") ? "active" : "")" href="/Invoice">Invoice</a>
+                </li>
+            }
+
+            @* Show Submissions link for Admin *@
+            @if (HttpContextAccessor.HttpContext.Session.GetString("UserRole") == "Admin")
+            {
+                <li class="nav-item">
+                    <a class="nav-link @((ViewContext.RouteData.Values["controller"].ToString() == "Submission") ? "active" : "")" href="/Submission">Submissions</a>
+                </li>
+            }
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            @* Show Login/Logout based on the user's login state *@
+            @if (HttpContextAccessor.HttpContext.Session.GetString("UserRole") == null)
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="/Account/Login">
+                        <i class="fa fa-user-circle profile-icon"></i> Login
+                    </a>
+                </li>
+            }
+            else
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="/Account/Logout">
+                        <i class="fa fa-sign-out-alt profile-icon"></i> Logout
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+
     <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        @RenderBody()
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - AfriclaimMVCST10275486 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @RenderSection("Scripts", required: false)
 </body>
 </html>
