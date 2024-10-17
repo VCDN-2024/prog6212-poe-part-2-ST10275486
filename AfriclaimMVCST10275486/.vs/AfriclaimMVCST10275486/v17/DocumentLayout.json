@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVCST10275486\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B8B2584-E515-4D48-82D3-DB864590D549}|AfriclaimMVCST10275486\\AfriclaimMVCST10275486.csproj|c:\\users\\jadin\\source\\repos\\africlaimmvcst10275486\\africlaimmvcst10275486\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B8B2584-E515-4D48-82D3-DB864590D549}|AfriclaimMVCST10275486\\AfriclaimMVCST10275486.csproj|solutionrelative:africlaimmvcst10275486\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B8B2584-E515-4D48-82D3-DB864590D549}|AfriclaimMVCST10275486\\AfriclaimMVCST10275486.csproj|c:\\users\\jadin\\source\\repos\\africlaimmvcst10275486\\africlaimmvcst10275486\\models\\claimviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B8B2584-E515-4D48-82D3-DB864590D549}|AfriclaimMVCST10275486\\AfriclaimMVCST10275486.csproj|solutionrelative:africlaimmvcst10275486\\models\\claimviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B8B2584-E515-4D48-82D3-DB864590D549}|AfriclaimMVCST10275486\\AfriclaimMVCST10275486.csproj|c:\\users\\jadin\\source\\repos\\africlaimmvcst10275486\\africlaimmvcst10275486\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0B8B2584-E515-4D48-82D3-DB864590D549}|AfriclaimMVCST10275486\\AfriclaimMVCST10275486.csproj|C:\\Users\\jadin\\source\\repos\\AfriclaimMVCST10275486\\africlaimmvcst10275486\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B8B2584-E515-4D48-82D3-DB864590D549}|AfriclaimMVCST10275486\\AfriclaimMVCST10275486.csproj|solutionrelative:africlaimmvcst10275486\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B8B2584-E515-4D48-82D3-DB864590D549}|AfriclaimMVCST10275486\\AfriclaimMVCST10275486.csproj|c:\\users\\jadin\\source\\repos\\africlaimmvcst10275486\\africlaimmvcst10275486\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B8B2584-E515-4D48-82D3-DB864590D549}|AfriclaimMVCST10275486\\AfriclaimMVCST10275486.csproj|solutionrelative:africlaimmvcst10275486\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,6 +51,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ClaimViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVCST10275486\\AfriclaimMVCST10275486\\Models\\ClaimViewModel.cs",
+              "RelativeDocumentMoniker": "AfriclaimMVCST10275486\\Models\\ClaimViewModel.cs",
+              "ToolTip": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVCST10275486\\AfriclaimMVCST10275486\\Models\\ClaimViewModel.cs",
+              "RelativeToolTip": "AfriclaimMVCST10275486\\Models\\ClaimViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:10:32.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVCST10275486\\AfriclaimMVCST10275486\\Models\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "AfriclaimMVCST10275486\\Models\\LoginViewModel.cs",
