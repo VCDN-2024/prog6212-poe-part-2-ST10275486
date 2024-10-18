@@ -12,4 +12,8 @@
     <PackageReference Include="Moq" Version="4.20.72" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="path_to_save_files\" />
+  </ItemGroup>
+
 </Project>
