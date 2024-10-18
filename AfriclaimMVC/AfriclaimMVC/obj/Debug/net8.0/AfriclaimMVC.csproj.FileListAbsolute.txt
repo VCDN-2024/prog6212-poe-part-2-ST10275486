@@ -28,3 +28,10 @@ C:\Users\jadin\source\repos\AfriclaimMVC\AfriclaimMVC\obj\Debug\net8.0\refint\Af
 C:\Users\jadin\source\repos\AfriclaimMVC\AfriclaimMVC\obj\Debug\net8.0\AfriclaimMVC.pdb
 C:\Users\jadin\source\repos\AfriclaimMVC\AfriclaimMVC\obj\Debug\net8.0\AfriclaimMVC.genruntimeconfig.cache
 C:\Users\jadin\source\repos\AfriclaimMVC\AfriclaimMVC\obj\Debug\net8.0\ref\AfriclaimMVC.dll
+C:\Users\jadin\source\repos\AfriclaimMVC\AfriclaimMVC\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\jadin\source\repos\AfriclaimMVC\AfriclaimMVC\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\jadin\source\repos\AfriclaimMVC\AfriclaimMVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\jadin\source\repos\AfriclaimMVC\AfriclaimMVC\bin\Debug\net8.0\Moq.dll
+C:\Users\jadin\source\repos\AfriclaimMVC\AfriclaimMVC\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\jadin\source\repos\AfriclaimMVC\AfriclaimMVC\obj\Debug\net8.0\AfriclaimMVC.csproj.AssemblyReference.cache
+C:\Users\jadin\source\repos\AfriclaimMVC\AfriclaimMVC\obj\Debug\net8.0\Africlai.E9757F96.Up2Date

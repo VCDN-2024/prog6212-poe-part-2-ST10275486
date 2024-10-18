@@ -14,7 +14,7 @@
     .login-title {
         font-size: 50px;
         font-weight: bold;
-        color: #006838; 
+        color: #006838;
         margin-bottom: 30px;
     }
 
@@ -56,7 +56,7 @@
     }
 
     .btn-login {
-        background-color: #ff9933; 
+        background-color: #ff9933;
         color: white;
         border: none;
         padding: 10px 20px;
@@ -69,10 +69,17 @@
         .btn-login:hover {
             background-color: #e68a00;
         }
+
+    .text-danger {
+        color: red;
+    }
 </style>
 
 <div class="center-content">
     <h1 class="login-title">LOGIN</h1>
+
+    <!-- Display error messages (Validation Summary) -->
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
     <form method="post" asp-action="Login" class="login-form">
         @Html.AntiForgeryToken() <!-- Anti-forgery token for security -->
@@ -81,6 +88,7 @@
             <label for="email">Email</label>
             <input type="email" class="form-control" id="email" name="Email" asp-for="Email" placeholder="Enter your email" required />
         </div>
+
         <!-- Password input field with toggle visibility icon -->
         <div class="form-group">
             <label for="password">Password</label>
@@ -89,6 +97,7 @@
                 <i class="fa fa-eye-slash toggle-password" onclick="togglePasswordVisibility()"></i>
             </div>
         </div>
+
         <!-- Submit button for login -->
         <button type="submit" class="btn btn-login">Login</button>
     </form>

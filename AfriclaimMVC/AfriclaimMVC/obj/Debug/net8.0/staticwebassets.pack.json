@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\AfriclaimMVC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\Images\\AFRICLAIM (1).png",
+      "PackagePath": "staticwebassets\\Images\\AFRICLAIM (1).png"
+    },
+    {
       "Id": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -243,6 +247,22 @@
     {
       "Id": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\uploads\\A+ Certificate.pdf",
+      "PackagePath": "staticwebassets\\uploads\\A+ Certificate.pdf"
+    },
+    {
+      "Id": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\uploads\\CLDV6211_POE_PT3_ST10275486.docx",
+      "PackagePath": "staticwebassets\\uploads\\CLDV6211_POE_PT3_ST10275486.docx"
+    },
+    {
+      "Id": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\uploads\\Prog6211_ST10275486_POE_PT1.docx",
+      "PackagePath": "staticwebassets\\uploads\\Prog6211_ST10275486_POE_PT1.docx"
+    },
+    {
+      "Id": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\uploads\\Untitled.png",
+      "PackagePath": "staticwebassets\\uploads\\Untitled.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AfriclaimMVC.Microsoft.AspNetCore.StaticWebAssets.props",

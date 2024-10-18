@@ -1,7 +1,7 @@
 ﻿@model List<AfriclaimMVC.Models.ClaimViewModel>
 
 @{
-    ViewData["Title"] = "Claim"; // Sets the title for the page
+    ViewData["Title"] = "Claim"; 
 }
 
 <h1 class="page-title">Index</h1>
@@ -16,7 +16,8 @@
             <th>Submission Date</th>
             <th>Name</th>
             <th>Surname</th>
-            <th>Amount/Hours</th>
+            <th>Hours</th>
+            <th>Hourly Rate</th> 
             <th>Module</th>
             <th>Total Salary</th>
             <th>Document</th>
@@ -27,7 +28,7 @@
         @if (Model.Count == 0)
         {
             <tr>
-                <td colspan="8" style="text-align: center;">No claims available.</td>
+                <td colspan="9" style="text-align: center;">No claims available.</td>
             </tr>
         }
         else
@@ -39,12 +40,13 @@
                     <td>@claim.Name</td>
                     <td>@claim.Surname</td>
                     <td>@claim.Amount</td>
+                    <td>R130.00</td> 
                     <td>@claim.Module</td>
                     <td>@claim.TotalSalary.ToString("C")</td>
                     <td>
                         @if (!string.IsNullOrEmpty(claim.DocumentName))
                         {
-                            <span>@claim.DocumentName</span>
+                            <a href="@claim.DocumentName" target="_blank">@System.IO.Path.GetFileName(claim.DocumentName)</a> <!-- Display document name -->
                         }
                         else
                         {
@@ -73,7 +75,7 @@
         display: inline-block;
         margin-bottom: 20px;
         padding: 10px 20px;
-        background-color: #ff9933; /* Orange color */
+        background-color: #ff9933; 
         color: white;
         border-radius: 20px;
         text-decoration: none;
@@ -91,7 +93,7 @@
             padding: 12px 15px;
             text-align: left;
             border: 1px solid #e0e0e0;
-            background-color: #e0f7f4; /* Light teal color */
+            background-color: #e0f7f4; 
             font-size: 14px;
             font-weight: bold;
             color: #000000;

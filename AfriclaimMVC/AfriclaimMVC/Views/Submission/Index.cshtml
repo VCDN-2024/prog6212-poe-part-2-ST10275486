@@ -11,7 +11,7 @@
     <span class="filter-label" style="background-color: #ff9933; padding: 5px 10px; border-radius: 5px; color: white;">Filter by:</span>
     <select id="filter" class="form-control" style="width: 200px; display: inline-block; margin-left: 10px;">
         <option value="Name">Name</option>
-        <!-- Add more filter options here if needed -->
+       
     </select>
 </div>
 
@@ -22,7 +22,8 @@
             <th>Submission Date</th>
             <th>Name</th>
             <th>Surname</th>
-            <th>Amount/Hours</th>
+            <th>Hours</th>
+            <th>Hourly Rate</th> <!-- Moved Hourly Rate next to Amount/Hours -->
             <th>Module</th>
             <th>Total Salary</th>
             <th>Document</th>
@@ -32,15 +33,24 @@
     <tbody>
         @foreach (var claim in Model)
         {
-            <!-- Start a new row for each claim -->
             <tr>
                 <td>@claim.SubmissionDate.ToString("d")</td> <!-- Display the submission date  -->
-                <td>@claim.Name</td> <!-- Display the persons name -->
-                <td>@claim.Surname</td> <!-- Display the persons surname -->
+                <td>@claim.Name</td> <!-- Display the person's name -->
+                <td>@claim.Surname</td> <!-- Display the person's surname -->
                 <td>@claim.Amount</td> <!-- Display the amount/hours claimed -->
+                <td>R130.00</td> <!-- Displaying the hourly rate next to Amount/Hours -->
                 <td>@claim.Module</td> <!-- Display the module related to the claim -->
                 <td>@claim.TotalSalary.ToString("C")</td> <!-- Display the total salary in currency format -->
-                <td>@(string.IsNullOrEmpty(claim.DocumentName) ? "No document" : claim.DocumentName)</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(claim.DocumentName))
+                    {
+                        <a href="@claim.DocumentName" target="_blank">@System.IO.Path.GetFileName(claim.DocumentName)</a> <!-- Display document name -->
+                    }
+                    else
+                    {
+                        <span>No document uploaded</span>
+                    }
+                </td>
                 <td>
                     @if (claim.Status == "Pending")
                     {
@@ -86,7 +96,7 @@
             padding: 12px 15px;
             text-align: left;
             border: 1px solid #e0e0e0;
-            background-color: #e0f7f4; /* Light teal color */
+            background-color: #e0f7f4; 
             font-size: 14px;
             font-weight: bold;
             color: #000000;
@@ -98,10 +108,10 @@
         }
 
     .btn {
-        margin-right: 5px; /* Ensure buttons have space between them */
+        margin-right: 5px; 
     }
 
-    /* Add style for the filter */
+    
     .filter-container {
         display: flex;
         align-items: center;
