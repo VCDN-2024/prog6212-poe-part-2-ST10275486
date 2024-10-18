@@ -1,20 +1,22 @@
 # Contract Monthly Claim System: Africlaim
 
-## Introduction
-Africlaim is a web-based application designed to simplify the process of managing monthly claims submitted by lecturers. The system ensures educational institutions can efficiently handle claims while maintaining transparency and accuracy.
+## Introduction (Erikaheidi, 2022)
+Africlaim is a website constructed to manage monthly claims from lecturers, focused on improving user experience. The system allows educational institutions to administer the claims processes with ease, integrity, and precision. The application enables the submission of claims by lecturers while providing a structured process through which coordinators and managers can review and accept the submitted claims.
 
-The application allows lecturers to submit claims, while coordinators and managers can verify and approve these claims through a streamlined workflow. CMCS also provides real-time tracking of claim statuses, automated notifications, and detailed administrative features for HR personnel.
+Africlaim also offers:
+- Claim status tracking capabilities
+- Notifications for claim updates
+- Extensive management functions for Human Resource officials
 
-## Key Features
+## Key Features (Erikaheidi, 2022)
 
 ### Claim Submission
-- **Simple Interface**: Lecturers can submit claims with all necessary details, including hours worked, hourly rate, and supporting notes.
-- **Document Upload**: Attach supporting documents such as timesheets and invoices for verification.
+- **Simple Interface**: It is feasible for lecturers to lodge claims inclusive of all relevant particulars like hours worked, hourly pay, and any additional documents.
+- **Document Upload**: Lecturers can attach supporting documents such as PDFs, Word documents, etc.
 
 ### Claim Verification and Approval
-- **Automated Workflow**: Claims are routed through predefined verification and approval stages to minimize manual tasks.
+- **Automated Workflow**: Claims are routed through verification and approval stages to minimize manual tasks.
 - **Multi-Level Approval**: Programme Coordinators verify claims, and Academic Managers provide final approval.
-- **Detailed Recordkeeping**: All decisions are logged for auditing and accountability.
 
 ### Status Monitoring
 - **Real-Time Updates**: Lecturers can track the status of their claims from submission to approval.
@@ -23,7 +25,6 @@ The application allows lecturers to submit claims, while coordinators and manage
 ## Technology Stack
 - **Framework**: ASP.NET Core MVC
 - **Language**: C#
-- **Database**: SQL Server
 - **Front-End**: Razor Views
 - **Version Control**: GitHub
 
@@ -32,28 +33,25 @@ The application allows lecturers to submit claims, while coordinators and manage
 - **IDE**: Visual Studio 2019 or later
 - **.NET Core**: Version 4.7.2 or later
 
-## Design and User Interface
+## Design and User Interface (Erikaheidi, 2022)
 
-### Color Scheme
-CMCS uses a sleek and modern color palette designed to enhance both usability and aesthetic appeal. The colors are selected to create a vibrant yet professional atmosphere:
+### Colour Scheme
+- **Green**: Used for the layout for the views of the website
+- **Teal**: Used for the layout for the views of the website
+- **White**: Used for the layout for the views of the website
+- **Black**: Used for the layout for the views of the website
+- **Orange**: Draws attention to important actions like submissions
 
-- **Green**: Represents key actions and success states, used for elements like buttons and confirmations.
-- **Teal**: A complementary color for secondary actions and accents.
-- **White**: A neutral backdrop that ensures clarity and content legibility.
-- **Black**: Adds sophistication and contrast, helping to highlight key areas.
-- **Orange**: Draws attention to important actions like submissions or warnings.
-
-## User Roles
+## User Roles (Erikaheidi, 2022)
 
 ### Lecturers
 - Submit claims, attach documents, and track the status of submissions.
 
 ### Admins (Programme Coordinators & Academic Managers)
-- **Programme Coordinators**: Verify and approve submitted claims before sending them to managers for final approval.
-- **Academic Managers**: Provide the final decision on claim approvals, ensuring all data meets institutional standards.
+- **Program Coordinators and Academic Managers**: Verify and approve submitted claims before final approval.
 
-## Conclusion
-Africlaim offers a transparent, and efficient approach to managing monthly claims for lecturers. By automating claim submissions and approvals, it reduces administrative burden and provides an intuitive interface for all users.
+## Conclusion (Erikaheidi, 2022)
+Africlaim provides a transparent and efficient approach to managing monthly claims for lecturers. By automating claim submissions and approvals, it reduces administrative liability and provides a straightforward interface for all users.
 
 ## Bibliography
 Bootstrap (n.d.). Bootstrap Themes Built & Curated by the Bootstrap Team. [online] Bootstrap Themes. Available at: https://themes.getbootstrap.com/.
