@@ -53,10 +53,12 @@ Africlaim also offers:
 ## Conclusion (Erikaheidi, 2022)
 Africlaim provides a transparent and efficient approach to managing monthly claims for lecturers. By automating claim submissions and approvals, it reduces administrative liability and provides a straightforward interface for all users.
 
-##YouTube and GitHub link:
--YouTube Link: https://youtu.be/E0HKYIJH6D8 
--In this YouTube video I show my project where I created my MVC called AfriclalimMVC it shows all the models, classes, controllers and views that I made and used as well as the unit tests I developed and ran. This video also shows the functionality of the web application as i run the code and show how it works, showing error handling as well
--GitHub Link: https://github.com/VCDN-2024/prog6212-poe-part-2-ST10275486.git 
+## YouTube and GitHub link:
+YouTube Link: https://youtu.be/E0HKYIJH6D8 
+
+In this YouTube video I show my project where I created my MVC called AfriclalimMVC it shows all the models, classes, controllers, and views that I made and used as well as the unit tests I developed and ran. This video also shows the functionality of the web application as I run the code and show how it works, showing error handling as well
+
+GitHub Link: https://github.com/VCDN-2024/prog6212-poe-part-2-ST10275486.git 
 
 ## Bibliography
 Bootstrap (n.d.). Bootstrap Themes Built & Curated by the Bootstrap Team. [online] Bootstrap Themes. Available at: https://themes.getbootstrap.com/.
