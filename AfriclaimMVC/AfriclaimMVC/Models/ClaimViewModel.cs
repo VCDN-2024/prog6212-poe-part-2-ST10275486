@@ -2,6 +2,15 @@
 {
     public class ClaimViewModel
     {
+        /***************************************************************************************
+        *   Title: Pro C 7 with .NET and .NET Core
+        *    Author: Andrew Troelsen; Philip Japikse
+        *    Date: 2017
+        *    Code version: Version 1
+        *    Availability: Textbook/Ebook
+        *
+        ***************************************************************************************/
+
         public int Id { get; set; }  // Unique identifier for the claim.
         public string Name { get; set; } // First name of the person making the claim.
         public string Surname { get; set; } //Surname of the person making the claim

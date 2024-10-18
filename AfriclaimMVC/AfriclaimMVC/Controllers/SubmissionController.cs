@@ -20,6 +20,14 @@ namespace AfriclaimMVC.Controllers
         [HttpPost]
         public IActionResult UpdateClaimStatus(int id, string status)
         {
+      /***************************************************************************************
+      *   Title: Pro C 7 with .NET and .NET Core
+      *    Author: Andrew Troelsen; Philip Japikse
+      *    Date: 2017
+      *    Code version: Version 1
+      *    Availability: Textbook/Ebook
+      *
+      ***************************************************************************************/
             // Find the claim by its unique Id
             var claim = claims.FirstOrDefault(c => c.Id == id);
             if (claim != null)

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GkWayZYSIrE2RMkjC0P+S6akhFnYzTdqTcw36z3r7H4=",
+  "Hash": "YAH1AH48wTsRIGhZC1YZpru+FlJwztf57NhX9ZPUM1o=",
   "Source": "AfriclaimMVC",
   "BasePath": "_content/AfriclaimMVC",
   "Mode": "Default",
@@ -1252,6 +1252,25 @@
       "OriginalItemSpec": "wwwroot\\uploads\\CLDV6211_POE_PT3_ST10275486.docx"
     },
     {
+      "Identity": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\uploads\\CLDV6221_POE_PT2_ST10275486.docx",
+      "SourceId": "AfriclaimMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\",
+      "BasePath": "_content/AfriclaimMVC",
+      "RelativePath": "uploads/CLDV6221_POE_PT2_ST10275486.docx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\CLDV6221_POE_PT2_ST10275486.docx"
+    },
+    {
       "Identity": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\uploads\\Prog6211_ST10275486_POE_PT1.docx",
       "SourceId": "AfriclaimMVC",
       "SourceType": "Discovered",
@@ -1288,6 +1307,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\Untitled.png"
+    },
+    {
+      "Identity": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\uploads\\Varsity College Online Registraction 1st Docuemnt practise.txt",
+      "SourceId": "AfriclaimMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\",
+      "BasePath": "_content/AfriclaimMVC",
+      "RelativePath": "uploads/Varsity College Online Registraction 1st Docuemnt practise.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Varsity College Online Registraction 1st Docuemnt practise.txt"
     }
   ]
 }

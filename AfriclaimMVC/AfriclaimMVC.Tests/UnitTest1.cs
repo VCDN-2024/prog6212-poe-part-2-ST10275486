@@ -12,6 +12,14 @@ namespace AfriclaimMVC.Tests
 {
     public class AccountControllerTests
     {
+        /***************************************************************************************
+       *   Title: Pro C 7 with .NET and .NET Core
+       *    Author: Andrew Troelsen; Philip Japikse
+       *    Date: 2017
+       *    Code version: Version 1
+       *    Availability: Textbook/Ebook
+       *
+       ***************************************************************************************/
         [Fact]
         public void Login_Admin_RedirectsToHome()
         {
@@ -73,6 +81,14 @@ namespace AfriclaimMVC.Tests
 {
     public class ClaimControllerTests
     {
+        /***************************************************************************************
+       *   Title: Pro C 7 with .NET and .NET Core
+       *    Author: Andrew Troelsen; Philip Japikse
+       *    Date: 2017
+       *    Code version: Version 1
+       *    Availability: Textbook/Ebook
+       *
+       ***************************************************************************************/
         [Fact]
         public void Create_ValidClaim_RedirectsToIndex()
         {
@@ -101,6 +117,14 @@ namespace AfriclaimMVC.Tests
 {
     public class TotalSalaryCalculatedTest
     {
+        /***************************************************************************************
+       *   Title: Pro C 7 with .NET and .NET Core
+       *    Author: Andrew Troelsen; Philip Japikse
+       *    Date: 2017
+       *    Code version: Version 1
+       *    Availability: Textbook/Ebook
+       *
+       ***************************************************************************************/
         [Fact]
         public void Create_ValidClaim_CalculatesTotalSalaryCorrectly()
         {

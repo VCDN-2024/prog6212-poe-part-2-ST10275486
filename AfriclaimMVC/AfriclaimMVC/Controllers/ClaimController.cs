@@ -44,6 +44,14 @@ namespace AfriclaimMVC.Controllers
                 {
                     try
                     {
+                        /***************************************************************************************
+                         *   Title: Path.Combine Method (System.IO)
+                         *    Author: Microsoft
+                         *    Date: [N/B]
+                         *    Code version: Version 1
+                         *    Availability: https://learn.microsoft.com/en-us/dotnet/api/system.io.path.combine?view=net-8.0
+                         *
+                         ***************************************************************************************/
                         // Save files to 'wwwroot/uploads'
                         string uploadsPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
 
@@ -51,7 +59,14 @@ namespace AfriclaimMVC.Controllers
                         {
                             Directory.CreateDirectory(uploadsPath);
                         }
-
+                        /***************************************************************************************
+                         *   Title: Path.Combine Method (System.IO)
+                         *    Author: Microsoft
+                         *    Date: [N/B]
+                         *    Code version: Version 1
+                         *    Availability: https://learn.microsoft.com/en-us/dotnet/api/system.io.path.combine?view=net-8.0
+                         *
+                         ***************************************************************************************/
                         var filePath = Path.Combine(uploadsPath, document.FileName);
                         using (var stream = new FileStream(filePath, FileMode.Create))
                         {

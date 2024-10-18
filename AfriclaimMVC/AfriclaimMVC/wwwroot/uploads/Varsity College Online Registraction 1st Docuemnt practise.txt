@@ -1,0 +1,23 @@
+Varsity College Online Registraction System
+
+PROBLEM
+
+There is a need for a new online registration system because students can regiter from anywhere at anytime. In addition less students come on campus to register. There will be higer efficiency as there will be less qeues and less room for human error.("problem" basically indicates the difficulities and problem of the situation.)
+
+CAPABILITIES
+
+The system shall allow users to LOGIN/SIGNUP
+The system shall confirm if the user is a robot or not
+the system shall allow students to choose a degree/diploma
+The system shall allow students to choose modules
+The system shall allow students to edit their personal details
+The system shall allow students to view their results
+The system shall check for available discounts depending on the marks
+The system shall allow students to enter fee payers details
+The system shall allow students to pay online
+The system shall allow students to sign out
+
+
+BUSINESS BENEFITS
+
+The system will provide efficienxy to registraction and sudents can avoid long qeues and register from anywhere at anytime.VC will save money as there will be less of a need to hire reg staff.

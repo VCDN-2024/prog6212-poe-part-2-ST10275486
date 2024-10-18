@@ -5,6 +5,14 @@
 }
 
 <!-- Style for the Login page -->
+<!--***************************************************************************************
+ *   Title: font-weight - CSS: Cascading Style Sheets | MDN
+ *    Author: MDN Web Docs
+ *    Date: [N/B]
+ *    Code version: Version 1
+ *    Availability: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
+ *
+     ***************************************************************************************/ -->
 <style>
     .center-content {
         text-align: center;
@@ -82,6 +90,14 @@
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
     <form method="post" asp-action="Login" class="login-form">
+        <!--***************************************************************************************
+        *   Title: HtmlHelper.AntiForgeryToken Method (System.Web.Mvc)
+        *    Author: Microsoft
+        *    Date: 2024
+        *    Code version: Version 1
+        *    Availability: https://learn.microsoft.com/en-us/dotnet/api/system.web.mvc.htmlhelper.antiforgerytoken?view=aspnet-mvc-5.2
+        *
+        ***************************************************************************************/ -->
         @Html.AntiForgeryToken() <!-- Anti-forgery token for security -->
         <!-- Login form -->
         <div class="form-group">
@@ -99,11 +115,27 @@
         </div>
 
         <!-- Submit button for login -->
+        <!--***************************************************************************************
+                           *   Title: asp.net core Button -Post method in Controller - Microsoft Q&A
+                           *    Author: Santhi Dhanuskodi
+                           *    Date: 11 April 2024
+                           *    Code version: Version 1
+                           *    Availability: https://learn.microsoft.com/en-au/answers/questions/1654918/asp-net-core-button-post-method-in-controller
+                           *
+        ***************************************************************************************/ -->
         <button type="submit" class="btn btn-login">Login</button>
     </form>
 </div>
 
 <!-- Toggle password visibility -->
+<!--***************************************************************************************
+    *   Title: How to show and hide password when click on eye icon using jquery
+    *    Author: Stackoverflow
+    *    Date: 27 July 2018
+    *    Code version: Version 1
+    *    Availability: https://stackoverflow.com/questions/51552661/how-to-show-and-hide-password-when-click-on-eye-icon-using-jquery
+    *
+***************************************************************************************/ -->
 <script>
     function togglePasswordVisibility() {
         var passwordInput = document.getElementById("password");

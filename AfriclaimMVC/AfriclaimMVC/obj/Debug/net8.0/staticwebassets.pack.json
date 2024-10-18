@@ -257,12 +257,20 @@
       "PackagePath": "staticwebassets\\uploads\\CLDV6211_POE_PT3_ST10275486.docx"
     },
     {
+      "Id": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\uploads\\CLDV6221_POE_PT2_ST10275486.docx",
+      "PackagePath": "staticwebassets\\uploads\\CLDV6221_POE_PT2_ST10275486.docx"
+    },
+    {
       "Id": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\uploads\\Prog6211_ST10275486_POE_PT1.docx",
       "PackagePath": "staticwebassets\\uploads\\Prog6211_ST10275486_POE_PT1.docx"
     },
     {
       "Id": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\uploads\\Untitled.png",
       "PackagePath": "staticwebassets\\uploads\\Untitled.png"
+    },
+    {
+      "Id": "C:\\Users\\jadin\\source\\repos\\AfriclaimMVC\\AfriclaimMVC\\wwwroot\\uploads\\Varsity College Online Registraction 1st Docuemnt practise.txt",
+      "PackagePath": "staticwebassets\\uploads\\Varsity College Online Registraction 1st Docuemnt practise.txt"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AfriclaimMVC.Microsoft.AspNetCore.StaticWebAssets.props",
