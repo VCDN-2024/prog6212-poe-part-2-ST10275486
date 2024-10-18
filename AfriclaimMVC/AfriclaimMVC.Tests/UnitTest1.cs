@@ -24,7 +24,7 @@ namespace AfriclaimMVC.Tests
         public void Login_Admin_RedirectsToHome()
         {
             
-            var controller = new AccountController();  // Instantiate the AccountController
+            var controller = new AccountController();  // Instantiates the AccountController
 
             // Create  dictionary to simulate session values
             var sessionValues = new Dictionary<string, string>();
